@@ -1,0 +1,14 @@
+{
+  "name": "factory-website",
+  "version": "1.0.0",
+  "description": "Дипломный проект: система записи на экскурсии + симулятор производства",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev",
+    "install-all": "cd backend && npm install"
+  },
+  "keywords": ["диплом", "экскурсии", "завод", "postgresql", "express"],
+  "author": "Ульяна",
+  "license": "MIT"
+}
