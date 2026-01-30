@@ -9,7 +9,7 @@ const bookingsRouter = require('./src/routes/bookings');
 const reviewsRouter = require('./src/routes/reviews');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
