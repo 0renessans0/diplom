@@ -12,11 +12,11 @@
     <!-- Модальное окно проверки возраста -->
     <div id="ageModal" class="modal">
         <div class="modal-content">
-            <h2 data-translate="Вам есть 18 лет?">Вам есть 18 лет?</h2>
-            <p data-translate="Для доступа к сайту необходимо подтвердить возраст">Для доступа к сайту необходимо подтвердить возраст</p>
+            <h2>Вам есть 18 лет?</h2>
+            <p>Для доступа к сайту необходимо подтвердить возраст</p>
             <div class="modal-buttons">
-                <button id="confirmAge" class="btn btn-primary" data-translate="Да, мне есть 18">Да, мне есть 18</button>
-                <button id="denyAge" class="btn btn-secondary" data-translate="Нет, мне меньше 18">Нет, мне меньше 18</button>
+                <button id="confirmAge" class="btn btn-primary">Да, мне есть 18</button>
+                <button id="denyAge" class="btn btn-secondary">Нет, мне меньше 18</button>
             </div>
         </div>
     </div>
@@ -24,9 +24,9 @@
     <!-- Модальное окно отказа -->
     <div id="denyModal" class="modal" style="display: none;">
         <div class="modal-content">
-            <h2 data-translate="Доступ запрещен">Доступ запрещен</h2>
-            <p data-translate="К сожалению, доступ к сайту разрешен только лицам старше 18 лет">К сожалению, доступ к сайту разрешен только лицам старше 18 лет.</p>
-            <button id="closeDeny" class="btn btn-secondary" data-translate="Закрыть">Закрыть</button>
+            <h2>Доступ запрещен</h2>
+            <p>К сожалению, доступ к сайту разрешен только лицам старше 18 лет.</p>
+            <button id="closeDeny" class="btn btn-secondary">Закрыть</button>
         </div>
     </div>
 
@@ -34,30 +34,30 @@
     <div id="reviewModal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2 data-translate="Оставить отзыв">Оставить отзыв</h2>
+            <h2>Оставить отзыв</h2>
             <form id="reviewForm">
                 <div class="form-group">
-                    <label for="reviewName" data-translate="ФИО">ФИО *</label>
+                    <label for="reviewName">ФИО *</label>
                     <input type="text" id="reviewName" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="reviewPhone" data-translate="Номер телефона">Номер телефона *</label>
+                    <label for="reviewPhone">Номер телефона *</label>
                     <input type="tel" id="reviewPhone" name="phone" required placeholder="8 800 352-67-66">
                 </div>
                 <div class="form-group">
-                    <label for="reviewTour" data-translate="Экскурсия">Экскурсия *</label>
+                    <label for="reviewTour">Экскурсия *</label>
                     <select id="reviewTour" name="tour" required>
-                        <option value="" data-translate="Выберите экскурсию">Выберите экскурсию</option>
-                        <option value="beer" data-translate="Пивная экскурсия">Пивная экскурсия</option>
-                        <option value="kvas" data-translate="Квасная экскурсия">Квасная экскурсия</option>
+                        <option value="">Выберите экскурсию</option>
+                        <option value="beer">Пивная экскурсия</option>
+                        <option value="kvas">Квасная экскурсия</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="reviewText" data-translate="Отзыв">Отзыв *</label>
+                    <label for="reviewText">Отзыв *</label>
                     <textarea id="reviewText" name="text" rows="4" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label data-translate="Оценка">Оценка</label>
+                    <label>Оценка</label>
                     <div class="rating-stars">
                         <span class="star" data-value="1">★</span>
                         <span class="star" data-value="2">★</span>
@@ -69,7 +69,7 @@
                 </div>
                 <button type="submit" class="btn btn-book-confirm">
                     <span class="btn-icon">✍️</span>
-                    <span data-translate="Отправить отзыв">Отправить отзыв</span>
+                    <span>Отправить отзыв</span>
                 </button>
             </form>
         </div>
@@ -83,21 +83,16 @@
                 <div class="nav-links">
                     <a href="index.html" class="nav-link active">
                         <span class="nav-icon">🏠</span>
-                        <span data-translate="Главная">Главная</span>
+                        <span>Главная</span>
                     </a>
                     <a href="excursions.html" class="nav-link">
                         <span class="nav-icon">📅</span>
-                        <span data-translate="Экскурсии">Экскурсии</span>
+                        <span>Экскурсии</span>
                     </a>
                     <a href="#" class="nav-link" id="gameLink">
                         <span class="nav-icon">🎮</span>
-                        <span data-translate="Игра">Игра</span>
+                        <span>Игра</span>
                     </a>
-                    <div class="language-switcher">
-                        <span class="lang active">RU</span>
-                        <span class="lang-divider">/</span>
-                        <span class="lang">ENG</span>
-                    </div>
                 </div>
             </nav>
         </header>
@@ -105,18 +100,14 @@
         <!-- Главный контент -->
         <main class="main-container">
             <div class="hero-section">
-                <div class="tour-header">
-                    <div class="tour-icon">🏭</div>
-                    <h1 data-translate="ЗаводПищеПром">ЗаводПищеПром</h1>
-                    <div class="tour-divider"></div>
-                    <p class="hero-subtitle" data-translate="Традиционные напитки с 1920 года">Традиционные напитки с 1920 года</p>
-                </div>
+                <h1 class="hero-title">ЗаводПищеПром</h1>
+                <p class="hero-subtitle">Традиционные напитки с 1920 года</p>
                 
                 <div class="cta-section">
-                    <h2 data-translate="Хотите увидеть производство изнутри?">Хотите увидеть производство изнутри?</h2>
+                    <h2>Хотите увидеть производство изнутри?</h2>
                     <a href="excursions.html" class="btn-book-main">
                         <span class="btn-icon">📋</span>
-                        <span data-translate="Записаться на экскурсию">Записаться на экскурсию</span>
+                        <span>Записаться на экскурсию</span>
                     </a>
                 </div>
             </div>
@@ -125,34 +116,48 @@
                 <div class="tour-preview beer-tour">
                     <div class="preview-header">
                         <div class="preview-icon">🍺</div>
-                        <h3 data-translate="Пивная экскурсия">Пивная экскурсия</h3>
+                        <h3>Пивная экскурсия</h3>
                     </div>
                     <div class="preview-info">
-                        <p><strong data-translate="Дни">Дни</strong>: Понедельник, Среда, Пятница</p>
-                        <p><strong data-translate="Время">Время</strong>: 12:00, 14:00, 16:00</p>
-                        <p><strong data-translate="Длительность">Длительность</strong>: 2 часа</p>
-                        <p><strong data-translate="Группа">Группа</strong>: до 15 человек</p>
+                        <p><strong>Дни</strong>: Понедельник, Среда, Пятница</p>
+                        <p><strong>Время</strong>: 12:00, 14:00, 16:00</p>
+                        <p><strong>Длительность</strong>: 2 часа</p>
+                        <p><strong>Группа</strong>: до 15 человек</p>
                     </div>
-                    <a href="excursions.html" class="btn-book-secondary" data-translate="Выбрать время">
-                        Выбрать время
+                    <a href="excursions.html" class="btn-book-secondary">
+                        <span class="btn-icon">📅</span>
+                        <span>Выбрать время</span>
                     </a>
                 </div>
 
                 <div class="tour-preview kvas-tour">
                     <div class="preview-header">
                         <div class="preview-icon">🥤</div>
-                        <h3 data-translate="Квасная экскурсия">Квасная экскурсия</h3>
+                        <h3>Квасная экскурсия</h3>
                     </div>
                     <div class="preview-info">
-                        <p><strong data-translate="Дни">Дни</strong>: Понедельник, Среда, Пятница</p>
-                        <p><strong data-translate="Время">Время</strong>: 13:00, 15:00, 17:00</p>
-                        <p><strong data-translate="Длительность">Длительность</strong>: 2 часа</p>
-                        <p><strong data-translate="Группа">Группа</strong>: до 15 человек</p>
+                        <p><strong>Дни</strong>: Понедельник, Среда, Пятница</p>
+                        <p><strong>Время</strong>: 13:00, 15:00, 17:00</p>
+                        <p><strong>Длительность</strong>: 2 часа</p>
+                        <p><strong>Группа</strong>: до 15 человек</p>
                     </div>
-                    <a href="excursions.html" class="btn-book-secondary" data-translate="Выбрать время">
-                        Выбрать время
+                    <a href="excursions.html" class="btn-book-secondary">
+                        <span class="btn-icon">📅</span>
+                        <span>Выбрать время</span>
                     </a>
                 </div>
+            </div>
+
+            <!-- Блок отзывов -->
+            <div class="reviews-section">
+                <h2 class="reviews-title">Отзывы посетителей</h2>
+                <div class="reviews-container" id="reviewsContainer">
+                    <div class="review-loading">Загрузка отзывов...</div>
+                </div>
+                <button id="loadMoreReviews" class="btn-book-secondary" style="margin-top: 2rem; display: none;">
+                    <span class="btn-icon">📝</span>
+                    <span>Показать ещё отзывы</span>
+                </button>
             </div>
         </main>
 
@@ -165,7 +170,7 @@
             <div class="panel-center">
                 <button id="openReview" class="btn-review">
                     <span class="review-icon">✍️</span>
-                    <span data-translate="Оставить отзыв">Оставить отзыв</span>
+                    <span>Оставить отзыв</span>
                 </button>
             </div>
             <div class="panel-right">
@@ -176,10 +181,87 @@
     </div>
 
     <script src="src/js/age-verification.js"></script>
+    <script src="src/js/db-service.js"></script>
     <script>
-        // Логика для главной страницы
         document.addEventListener('DOMContentLoaded', function() {
             console.log('🏠 Главная страница загружена');
+            
+            // Инициализация БД
+            window.db = new DatabaseService();
+            
+            // Загрузка отзывов
+            let reviewsOffset = 0;
+            const reviewsLimit = 4;
+            
+            function loadReviews() {
+                const reviewsContainer = document.getElementById('reviewsContainer');
+                if (!reviewsContainer) return;
+                
+                const reviews = window.db.getReviews(reviewsLimit, reviewsOffset);
+                const totalReviews = window.db.getReviewsCount();
+                
+                if (reviewsOffset === 0) {
+                    reviewsContainer.innerHTML = '';
+                }
+                
+                if (reviews.length === 0 && reviewsOffset === 0) {
+                    reviewsContainer.innerHTML = '<div class="no-reviews">Пока нет отзывов. Будьте первым!</div>';
+                    return;
+                }
+                
+                reviews.forEach(review => {
+                    const reviewCard = document.createElement('div');
+                    reviewCard.className = 'review-card';
+                    
+                    // Форматируем дату
+                    const date = new Date(review.date);
+                    const formattedDate = date.toLocaleDateString('ru-RU', {
+                        day: 'numeric',
+                        month: 'long',
+                        year: 'numeric'
+                    });
+                    
+                    // Создаем звезды рейтинга
+                    let stars = '';
+                    for (let i = 1; i <= 5; i++) {
+                        stars += i <= review.rating ? '★' : '☆';
+                    }
+                    
+                    reviewCard.innerHTML = `
+                        <div class="review-header">
+                            <div class="review-author">${review.name}</div>
+                            <div class="review-date">${formattedDate}</div>
+                        </div>
+                        <div class="review-rating">${stars}</div>
+                        <div class="review-text">${review.text}</div>
+                        <div class="review-tour">Экскурсия: ${review.tour === 'beer' ? 'Пивная' : 'Квасная'}</div>
+                    `;
+                    
+                    reviewsContainer.appendChild(reviewCard);
+                });
+                
+                // Обновляем кнопку
+                const loadMoreBtn = document.getElementById('loadMoreReviews');
+                if (loadMoreBtn) {
+                    if (reviewsOffset + reviewsLimit >= totalReviews) {
+                        loadMoreBtn.style.display = 'none';
+                    } else {
+                        loadMoreBtn.style.display = 'inline-flex';
+                    }
+                }
+            }
+            
+            // Кнопка "Показать ещё"
+            const loadMoreBtn = document.getElementById('loadMoreReviews');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    reviewsOffset += reviewsLimit;
+                    loadReviews();
+                });
+            }
+            
+            // Изначальная загрузка отзывов
+            loadReviews();
             
             // Кнопка "Игра"
             const gameLink = document.getElementById('gameLink');
@@ -254,150 +336,39 @@
                         return;
                     }
                     
-                    alert('Отзыв отправлен! Спасибо за ваше мнение.');
+                    // Сохраняем отзыв в БД
+                    const reviewData = {
+                        name: name,
+                        phone: phone,
+                        tour: tour,
+                        text: text,
+                        rating: rating,
+                        date: new Date().toISOString()
+                    };
                     
-                    // Сброс формы
-                    reviewForm.reset();
-                    stars.forEach(star => star.classList.remove('active'));
-                    currentRating = 0;
-                    ratingInput.value = 0;
+                    const success = window.db.addReview(reviewData);
                     
-                    // Закрытие модалки
-                    reviewModal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
+                    if (success) {
+                        alert('✅ Отзыв отправлен! Спасибо за ваше мнение.');
+                        
+                        // Сброс формы
+                        reviewForm.reset();
+                        stars.forEach(star => star.classList.remove('active'));
+                        currentRating = 0;
+                        ratingInput.value = 0;
+                        
+                        // Закрытие модалки
+                        reviewModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                        
+                        // Обновляем список отзывов
+                        reviewsOffset = 0;
+                        loadReviews();
+                    } else {
+                        alert('❌ Ошибка при сохранении отзыва');
+                    }
                 });
             }
-        });
-    </script>
-    
-    <!-- СКРИПТ ПЕРЕВОДА -->
-    <script>
-        // Функция перевода
-        function switchLanguage(lang) {
-            console.log('🌐 Переключаем язык на:', lang);
-            
-            const translations = {
-                'ru': {
-                    // Модальные окна
-                    'Вам есть 18 лет?': 'Вам есть 18 лет?',
-                    'Для доступа к сайту необходимо подтвердить возраст': 'Для доступа к сайту необходимо подтвердить возраст',
-                    'Да, мне есть 18': 'Да, мне есть 18',
-                    'Нет, мне меньше 18': 'Нет, мне меньше 18',
-                    'Доступ запрещен': 'Доступ запрещен',
-                    'К сожалению, доступ к сайту разрешен только лицам старше 18 лет': 'К сожалению, доступ к сайту разрешен только лицам старше 18 лет',
-                    'Закрыть': 'Закрыть',
-                    
-                    // Навигация
-                    'Главная': 'Главная',
-                    'Экскурсии': 'Экскурсии',
-                    'Игра': 'Игра',
-                    
-                    // Контент
-                    'ЗаводПищеПром': 'ЗаводПищеПром',
-                    'Традиционные напитки с 1920 года': 'Традиционные напитки с 1920 года',
-                    'Хотите увидеть производство изнутри?': 'Хотите увидеть производство изнутри?',
-                    'Записаться на экскурсию': 'Записаться на экскурсию',
-                    'Пивная экскурсия': 'Пивная экскурсия',
-                    'Квасная экскурсия': 'Квасная экскурсия',
-                    'Дни': 'Дни',
-                    'Время': 'Время',
-                    'Длительность': 'Длительность',
-                    'Группа': 'Группа',
-                    'Выбрать время': 'Выбрать время',
-                    'Оставить отзыв': 'Оставить отзыв',
-                    
-                    // Форма отзыва
-                    'ФИО': 'ФИО',
-                    'Номер телефона': 'Номер телефона',
-                    'Экскурсия': 'Экскурсия',
-                    'Выберите экскурсию': 'Выберите экскурсию',
-                    'Отзыв': 'Отзыв',
-                    'Оценка': 'Оценка',
-                    'Отправить отзыв': 'Отправить отзыв'
-                },
-                'en': {
-                    // Модальные окна
-                    'Вам есть 18 лет?': 'Are you 18 years old?',
-                    'Для доступа к сайту необходимо подтвердить возраст': 'You must confirm your age to access the site',
-                    'Да, мне есть 18': 'Yes, I am 18',
-                    'Нет, мне меньше 18': 'No, I am under 18',
-                    'Доступ запрещен': 'Access Denied',
-                    'К сожалению, доступ к сайту разрешен только лицам старше 18 лет': 'Unfortunately, access to the site is allowed only for persons over 18 years old',
-                    'Закрыть': 'Close',
-                    
-                    // Навигация
-                    'Главная': 'Home',
-                    'Экскурсии': 'Tours',
-                    'Игра': 'Game',
-                    
-                    // Контент
-                    'ЗаводПищеПром': 'Food Production Factory',
-                    'Традиционные напитки с 1920 года': 'Traditional drinks since 1920',
-                    'Хотите увидеть производство изнутри?': 'Want to see production from inside?',
-                    'Записаться на экскурсию': 'Book a Tour',
-                    'Пивная экскурсия': 'Beer Tour',
-                    'Квасная экскурсия': 'Kvas Tour',
-                    'Дни': 'Days',
-                    'Время': 'Time',
-                    'Длительность': 'Duration',
-                    'Группа': 'Group',
-                    'Выбрать время': 'Select Time',
-                    'Оставить отзыв': 'Leave Review',
-                    
-                    // Форма отзыва
-                    'ФИО': 'Full Name',
-                    'Номер телефона': 'Phone Number',
-                    'Экскурсия': 'Tour',
-                    'Выберите экскурсию': 'Select Tour',
-                    'Отзыв': 'Review',
-                    'Оценка': 'Rating',
-                    'Отправить отзыв': 'Submit Review'
-                }
-            };
-            
-            // Переводим все элементы с data-translate
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang] && translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
-            
-            // Сохраняем выбранный язык
-            localStorage.setItem('selectedLanguage', lang);
-        }
-        
-        // При загрузке страницы
-        document.addEventListener('DOMContentLoaded', function() {
-            // Восстанавливаем сохраненный язык
-            const savedLang = localStorage.getItem('selectedLanguage') || 'ru';
-            
-            // Устанавливаем активную кнопку
-            document.querySelectorAll('.lang').forEach(btn => {
-                if (btn.textContent.toLowerCase() === savedLang) {
-                    btn.classList.add('active');
-                    // Применяем перевод
-                    setTimeout(() => switchLanguage(savedLang), 100);
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-            
-            // Обработчики для кнопок перевода
-            document.querySelectorAll('.lang').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const lang = this.textContent.toLowerCase();
-                    
-                    // Переключаем активный класс
-                    document.querySelectorAll('.lang').forEach(b => {
-                        b.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                    
-                    // Применяем перевод
-                    switchLanguage(lang);
-                });
-            });
         });
     </script>
 </body>

@@ -1,0 +1,138 @@
+/* СТИЛИ ФОРМ */
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-yellow); /* Желтый цвет для labels */
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--light-green);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15); /* Полупрозрачный фон */
+    color: var(--white); /* БЕЛЫЙ ТЕКСТ! */
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+/* Плейсхолдеры тоже белые */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Светлый плейсхолдер */
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-yellow);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 3px rgba(227, 206, 48, 0.2);
+}
+
+/* Специально для select */
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5em;
+    padding-right: 3rem;
+}
+
+/* Опции в select */
+.form-group select option {
+    background: var(--primary-green);
+    color: var(--white);
+    padding: 10px;
+}
+
+/* Текстовое поле */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: inherit;
+}
+
+/* ЗВЕЗДЫ РЕЙТИНГА */
+.rating-stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.star {
+    font-size: 2.5rem;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.star:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.star.active {
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.star:hover ~ .star {
+    color: #666;
+}
+
+/* Детали бронирования */
+.booking-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border: 1px solid var(--light-green);
+}
+
+.booking-details p {
+    margin-bottom: 0.8rem;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.booking-details span {
+    color: var(--accent-yellow);
+    font-weight: 600;
+}
+
+/* Для мобильных */
+@media (max-width: 768px) {
+    .rating-stars {
+        gap: 0.3rem;
+    }
+    
+    .star {
+        font-size: 2rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.8rem;
+    }
+    
+    .form-group select {
+        background-position: right 0.8rem center;
+        padding-right: 2.5rem;
+    }
+}
